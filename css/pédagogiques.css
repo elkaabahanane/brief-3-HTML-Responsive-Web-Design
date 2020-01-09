@@ -141,6 +141,11 @@ nav ul li button:hover
         font-weight: bold;
         line-height: 24px;
     }
+    .accueil
+    {
+        padding-top: 80px;
+
+    }
 
 
     .logo

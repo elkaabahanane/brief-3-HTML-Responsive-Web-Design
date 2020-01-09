@@ -148,6 +148,11 @@
             width: 100%;
             visibility: visible;
         }
+        .accueil
+        {
+            padding-top: 80px;
+
+        }
     
         nav ul li button
         {
