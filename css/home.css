@@ -1,0 +1,674 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+    
+.whiteSpace
+{
+    height: 120px;
+}
+    .padding
+    {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+    
+    /* --------------------------------------------------start navbar------------------------------------------------- */
+    #myCheck
+    {   
+        position: absolute;    
+        visibility: hidden;
+    }
+
+    nav ul{
+        top: 0%;
+        position: fixed;
+        list-style: none;
+        display: flex;
+        background-color: black;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    #myCheck
+    {
+        position: absolute;    
+        visibility: hidden;
+    }
+    
+    .logo
+    {
+        padding: 12px 50px 8px 50px;
+    }
+    
+    nav ul li
+    {
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom:16px;
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        font-size:14px;
+        font-weight: bold;
+        line-height: 24px;
+        
+    }
+    li a
+    {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        font-size:14px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    nav ul li:hover
+    {
+     color: rgb(51, 122, 183);
+    }
+    li a:hover
+    {
+        color: rgb(51, 122, 183);
+
+    }
+
+    nav ul li button
+    {
+        height: 32px;
+        width: 160px;
+        color: white;
+        font-size: 16px;
+        background-color: rgb(0, 138, 255);
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0.3) ;
+    
+    }
+    nav ul li button:hover
+    {
+        background-color: white;
+        color: rgb(0, 138, 255);
+        box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0) ;
+    
+    }
+    @media(max-width:1415px){
+        nav ul{
+            padding: 0% !important;
+        }
+
+    }
+    
+    
+    @media(max-width:1200px){
+        .padding
+    {
+        padding: 0;
+    }
+      
+        #myCheck
+        {
+            visibility: visible;
+            top: 0;
+            margin-top: 3%;
+            margin-left: 3%;
+            z-index: 10;
+            position: fixed;
+        }
+        nav ul
+        {
+            visibility: collapse;
+            display: block;
+            position: fixed;
+            width: 40%;
+            z-index: 7;
+        }
+    
+        #myCheck:checked ~nav ul
+        {
+            visibility: visible;
+        }
+    
+        nav ul li 
+        {
+            text-align: left;
+            padding-left: 16px;
+            padding-top: 16px;
+            padding-bottom:16px ;
+            font-size:12px;
+            font-weight: bold;
+            line-height: 24px;
+        }
+    
+    
+        .logo
+        {
+            position: fixed;
+            text-align: center;
+            background-color: black;
+            width: 100%;
+            visibility: visible;
+        }
+    
+        nav ul li button
+        {
+            height: 20px;
+            width: 80px;
+            font-size: 12px;
+        }
+    }
+    
+    /* ---------------------------------------------end navbar-------------------------------------------------------- */
+    /* ---------------------------------------------start header------------------------------------------------------ */
+    .homebackground
+    {   
+        position: absolute;
+        top: 0%;
+        height: 50%;
+        width:100%;
+        background-image: url(../images/slide1.jpg);
+        background-size: cover;
+    }
+
+    .bg
+    {
+        position: fixed;
+        top: 0%;
+        height: 100%;
+        width:100%;
+        background-image: url(../images/bgfound.png);
+        z-index: -100;
+    } 
+    
+    .title{
+        margin-top: 10%;
+        margin-bottom: 8px;
+        margin-left: 3%;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    
+    }
+    .p1
+    {
+        font-size: 42px;
+        margin-bottom: 8px;
+    }
+    
+    .p2{
+        
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .inscrisbtn{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 18px;
+        background-color: rgb(0, 138, 255,0);
+        border: 2px solid;
+        border-radius: 30px;
+        padding: 12px 50px 12px 50px;
+    
+    }
+    .inscrisbtn:hover
+    {
+        background-color: white;
+        color:rgb(73, 97, 116) ;
+        border-color: white;
+    
+    }
+    .découvrebtn
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(0, 138, 255);
+        border: 2px solid rgb(0, 138, 255);
+        border-radius: 30px;
+        padding: 12px 60px 12px 60px;
+        box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0.3) ;
+    }
+    .découvrebtn:hover
+    {
+        background-color: white;
+        color:rgb(73, 97, 116) ;
+        border-color: white;
+        box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0) ;
+    
+    }
+
+    @media(max-width:767px)
+    {
+        .homebackground{
+            display: block;
+            position: static;
+            margin: 0;
+        }
+        .title
+        {
+            display: block;
+            text-align: center;
+            padding-top: 25%;
+            margin:0;
+        }
+        .p1
+        {
+            font-size: 24px;
+        }
+        .p2
+        {
+            font-size: 16px;
+            padding-top: 24px;
+        }
+        .inscrisbtn
+        {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            padding: 8px 30px 8px 30px;
+            margin: auto;
+        }
+        .découvrebtn
+        {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            padding: 8px 30px 8px 30px;
+            margin: 16 auto 8;
+        }
+    }
+    
+    
+    /* ---------------------------------------------end header-------------------------------------------------------  */
+    /* --------------------------------------------start section1----------------------------------------------------- */
+    .paragraph
+    {
+        margin-top: 560px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 38px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+    
+    }
+    
+    .paragraph p
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    
+    }
+    
+    .col
+    {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .col p
+    {
+        padding: 20px  20px 20px 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .col h3
+    {
+        font-family: 'Montserrat', sans-serif;
+        color:rgb(73, 97, 116) ;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 24px  24px 20px 24px;
+    }
+    
+    @media(max-width:767px){
+        .col
+        {
+            display: block;
+        }
+        .paragraph
+        {
+            margin-top: 60px;
+    
+    
+        }
+        
+    }
+        /*------------------------ end section1 ---------------------------*/
+        /*------------------------ start siction2 --------------------------*/
+    .col1
+    {
+        display: flex;   
+    }
+    .col1 h3
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32;
+        color: ivory;
+        text-align: center;
+        padding: 60px 0 30px 0;
+    }
+    
+    .col1 p
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16;
+        color: ivory;
+        text-align: justify;
+        padding: 0px 80px 128px 60;
+    }
+    .col1 h4
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16;
+        color: ivory;
+        text-align: center;
+        padding: 20px 0px 30px 0;
+    }
+    
+    .bgd
+    {
+        background-color: rgb(0, 138, 255);
+        width: 100%;
+    
+    }
+    .paragraphe3
+    {
+        width: 100%;
+    }
+    .img3
+    {
+        width: 100%;
+    }
+    
+    @media(max-width:767px)
+    {
+        .col1
+        {
+            display: block;
+        }
+        /* .paragraphe3
+        {
+            width: 100%;
+        }
+        .img3
+        {
+        width: 100%;
+        } */
+    }
+    
+    /* --------------------------end siction2------------------------------------ */
+    
+    
+    /* --------------------------start siction3------------------------------------ */
+    .bgsimplon
+    {
+        height: 500px;
+        width: 100%;
+        background-image: url(../images/simplon.png);
+        background-size: cover;
+    }
+    .bgcolorsimplon
+    {
+        height: 500px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.7);
+    }
+    .bgsimplon h4
+    {   
+        position: absolute;
+        margin-left: 44%;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color:  rgb(0, 138, 255);
+        margin-top: 210px;
+    }
+    .bgsimplon p
+    {
+        position: absolute;
+        margin-left: 35%;
+        font-family: 'Montserrat', sans-serif;
+        color:white;
+        font-size: 60px;
+        margin-top: 240px;
+    }
+    
+    .col2
+    {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 50px 24px 50px 24px;
+        background-color: rgb(0, 138, 255);
+    }
+    .col2 h4
+    {
+        font-size: 40px;
+        padding-bottom: 24px;
+    }
+    .col2 p
+    {
+        font-size: 24px;
+        padding: 16px;
+    }
+    
+    
+    @media(max-width:767px)
+    {
+        .bgsimplon
+        {
+            display: block;
+            text-align: center;
+        }
+        .bgsimplon h4
+        {   
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color:  rgb(0, 138, 255);
+            margin-top: 210px;
+        }
+        .bgsimplon p
+        {
+            font-family: 'Montserrat', sans-serif;
+            color:white;
+            font-size: 40px;
+            margin-top: 240px;
+            text-align: center;
+    
+        }
+        .col2
+        {
+            display: block;
+            text-align: center;
+            padding: 50px 16px 50px 16px;
+        }
+    
+        .col2 div
+        {
+            padding: 50px 50px 50px 50px;
+        }
+    
+    }
+    
+    /*-------------------------------end section3---------------------------------- */
+    
+    
+    /* ------------------------------start section4---------------------------------- */
+    .simplonparagraphe
+    {
+        padding: 70px 60px 16px 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+    
+    .sponsorisé
+    {
+        font-size: 48px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 200px;
+        
+    }
+    .ocplogo
+    {
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 112px;
+    
+    }
+    
+    .col3
+    {
+        display: flex;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .col3 div
+    {
+        width: 50%;
+        font-size: 32px;
+    
+    }
+    .col3 button
+    {
+        padding: 12px 40% 12px 40%;
+        color: white;
+        background-color: rgb(0, 138, 255);
+        border: rgb(0, 138, 255);
+        box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0.2) ;
+        border-radius: 30px;
+    }
+    .col3 button:hover
+    {
+        background-color:white ;
+        color:rgb(0, 138, 255) ;
+        box-shadow: 0px 8px 8px 8px rgba(2, 2, 2, 0.1) ;
+    }
+    
+    @media(max-width:767px)
+    {
+        .simplonparagraphe
+        {
+            padding: 70px 30px 16px 30px;
+        }
+        .sponsorisé
+        {
+            font-size: 32px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 100px;
+            
+        }
+        .col3
+        {
+            display: block;
+            font-size: 24px;
+            text-align: center;
+    
+        }
+        .col3 div
+        {
+            width: 100%;
+        }
+    
+        .col3 button
+    {
+        padding: 8px 20% 8px 20%;
+        font-size: 12px;
+        margin: 0%;
+        margin-top: 24px;
+    
+    }
+    }
+    
+    /* --------------------------------start footer----------------------------- */
+    footer
+    {
+        background-color: black;
+        display: flex;
+        width: 100%;
+    
+    }
+    /* .footer
+    {
+        display: flex;
+    } */
+    .contactez
+    {
+        /* width: 90%; */
+    }
+    .contactez p
+    {
+        color: rgb(119, 119, 119);
+        font: 16px sans-serif;
+        letter-spacing: 0.08em;
+        padding: 8px 0px 0px 32px;
+        
+    }
+    
+    .youcode
+    {
+        margin: 24px 30% 0 30% ;
+        color: rgb(119, 119, 119);
+        font:  15px sans-serif;
+        letter-spacing: 0.08em;
+    }
+    
+    .suivez
+    {
+        color:rgb(119, 119, 119);
+        font: 16px sans-serif;
+        letter-spacing: 0.08em;
+        padding: 8px  16px 8px 16px;
+    }
+    
+    footer ul
+    {   
+        display: flex;
+        list-style: none;
+        float: right;
+        bottom: 0;
+    }
+    
+    footer ul li
+    {
+        padding:8px;
+    }
+    
+    @media(max-width:1200px){
+        footer
+        {
+            display: block;
+        }
+        .contactez 
+        {
+            padding: 0;
+            text-align: center;
+        }
+        .youcode 
+        {
+            padding: 0;
+            text-align: center;
+        }
+        .suivez
+        {
+            padding: 0;
+            text-align: center;
+        }
+        footer ul
+        {   
+            float:none;
+            justify-content: center;
+        }
+    
+    }
+    /* ------------------------------end footer----------------------------------- */
+    
+    
